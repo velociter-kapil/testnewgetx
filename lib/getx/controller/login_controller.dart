@@ -8,12 +8,13 @@ import 'package:getx_exampleapp/getx/view/dashboard.dart';
 import 'package:http/http.dart' as http;
 import '../network/httphelper.dart';
 
+
+
 class LoginController extends GetxController{
 
   TextEditingController username = TextEditingController();
   TextEditingController password = TextEditingController();
   RxBool pass_visable = false.obs;
-
 
   void VisiblePass(value){
     pass_visable.value = value;
